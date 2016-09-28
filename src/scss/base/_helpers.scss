@@ -30,11 +30,11 @@
  font-size: 1px;
  line-height: 0px;
  > * {
-  display: inline-block;
+  display: inline-block; 
   vertical-align: top;
   text-align: left;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
  }
  &:after {
   content: '';

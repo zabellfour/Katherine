@@ -17,6 +17,7 @@ composer.lock
 .DS_Store
 ._*
 node_modules/
+input/
 .com.apple.timemachine.supported
 
 # linux backup files
