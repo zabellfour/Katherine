@@ -10,7 +10,10 @@
 @import 'base/helpers';
 @import 'base/reset';
 @import 'base/typography';
-@import 'base/forms';
+@import 'base/forms';@import 'base/forms';
+
 
 /* Components */
 @import 'components/header';
+@import 'components/_banner';
+@import 'components/_google-map';
