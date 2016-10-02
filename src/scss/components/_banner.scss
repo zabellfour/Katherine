@@ -1,5 +1,21 @@
-.header-banner {
+
+.contact-banner {
 	height: 500px;
+	background-size: cover;
 	background-position: 50% 50%;
-	background-size: cover;	
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	 @include media('<tablet') {
+		height: 300px;
+	 }
+			
+}
+.banner-title {
+	text-align: center;
+	h2 {
+        line-height: 1.2;
+        margin-bottom: 0;
+        letter-spacing: 22px;
+	}
 }

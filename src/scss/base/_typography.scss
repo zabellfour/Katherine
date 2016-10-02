@@ -7,26 +7,30 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .h {
-  // font-family: $headings-font-family;
+  font-family: $headings-font-family;
+  line-height: $headings-line-height;
   // font-weight: bold;
-  // margin: 0 0 0.5em;
-  // color: $headings-color;
+  margin: 0 0 0.5em;
+  color: $headings-color;
 }
 
 h1, .h1 {
-  
+	font-weight: 300;
+	letter-spacing: 25px;
 }
 
 h2, .h2 {
- 
+  @extend .h1;
 }
 
 h3, .h3 {
-
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 400;
 }
 
 h4, .h4 {
-  
+  @extend .h3;
 }
 
 h5, .h5 {
