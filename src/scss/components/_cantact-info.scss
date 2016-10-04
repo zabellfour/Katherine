@@ -1,61 +1,125 @@
 .contact-section {
 	height: 566px;
-	width: 100%;
 	background: #e8e8e8;
+	@include media('<desktop') {
+	        height: auto;
+		}
 	.container {
 		position: relative;
+		padding: 0;
+		height: 100%;
 	}
 }
 .contact-block {
 	position: absolute;
+	width: 100%;
 	top: -120px;
-	h2 {
-		margin-bottom: 30px;
-	}
-	.contact-info-detail {
-		a {
-		display: inline-block;
-		margin-bottom: 30px;
-		color: $gray;
-			&:hover {
-			color: $white;
-			}
-		}
-		address {
-			line-height: 1.6;
-			margin-bottom: 42px;
-		}
+	h5 {
+		color: #444a50; 
+		margin-bottom: 41px;
+		letter-spacing: 5px;
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 	.left-side {
 		background-color: $white;
-		padding: 80px 90px 80px 15px;
+		padding: 47px 47px 47px 50px;
 	}
 	.right-side {
-		padding-top: 62px;
-		padding-bottom: 65px;
+		padding: 60px;
 		background-color: #c2a284;
 	}
-
+	.tel-link, .mail-link {
+		display: block;
+		width: 100%;
+		color: #444a50;
+		font-size: 16px;
+	}
+	.tel-link {
+		margin-bottom: 23px;
+	}
 	hr {
 		position: relative;
-		border-top: 1px solid #f3f3f3;
-		margin: 27px 0px;
+		border-top: 1px solid #dadbdc;
+		margin: 67px 0px;
 	}
+	address {
+		line-height: 1.6;
+		margin-bottom: 42px;
+	}
+	@include media('<desktop') {
+	        position: relative;
+		}
 }
 
 .contact-input-group {
+	position: relative;
 	.form-control {
 		height: auto;
 		margin-bottom: 10px;
 		padding: 10px 34px;
-		font-size: 15px;
-		line-height: 3;
-		border: none;
+		font-size: 14px;
+		line-height: 2;
+		border: 1px solid #e1d1c2;
+		border-radius: none;
+		background-color: #c2a284;
+		color: $white;
 		resize: none;
+		&:nth-child(6) {
+		margin-bottom: 0 !important;
+		}
+	}
+	textarea {
+		margin-bottom: 0;
+	}
+	::-webkit-input-placeholder {
+		color: $white;
+	}
+	::-moz-placeholder {
+		color: $white;
+	}
+	:-moz-placeholder {
+		color: $white;
+	}
+	:-ms-input-placeholder {
+		color: $white;
+	}
+	.input1::-webkit-input-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	::-moz-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	:-moz-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	:-ms-input-placeholder {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+	:focus::-webkit-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	:focus::-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	:focus:-moz-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	:focus:-ms-input-placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
 	}
 	.btn {
-		float: right;
-		width: 196px;
-		padding: 22px 30px;
+		position: absolute;
+		bottom: -100px;
+		right: 0;
 	}
+
 }

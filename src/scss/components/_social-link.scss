@@ -1,0 +1,25 @@
+.social-links {
+	display: flex;
+	width: 102px;
+	justify-content: space-between;
+	align-items: center;
+	a {
+		display: block;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		&:hover {
+			opacity: .7;
+		}
+		i {
+			line-height: 50px;
+			font-size: 16px;
+			color: $white;
+		}
+	}
+	&-dark {
+		a {
+			background-color: #3b4045;
+		}
+	}
+}
