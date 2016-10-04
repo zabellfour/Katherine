@@ -1,0 +1,104 @@
+#footer {
+    background-color: $gray;
+    padding-top: 44px;
+    padding-bottom: 60px;
+    @include media('<desktop') {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 12px;
+    }
+    a:hover {
+        color: $cream;
+
+    }
+    .telephone-inverse {
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        vertical-align: middle;
+        @include media('<widescreen') {
+            font-size: 18px;
+        }
+        i {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+    .footer-top {
+        display: flex;
+        align-items: center;
+        padding-bottom: 44px;
+        justify-content: space-between;
+        margin-bottom: 70px;
+        @include media('<desktop') {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    .footer-nav {
+        @extend %listreset;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        @include media('<desktop') {
+            margin-bottom: 10px;
+        }
+        li {
+            display: block;
+            &.active a{
+				color: $cream;
+            }
+            @include media('<widescreen') {
+                padding-right: 14px;
+                font-size: 12px;
+            }
+            @include media('<tablet') {
+                width: 100%;
+            }
+            a {
+                text-transform: uppercase;
+                font-size: 13px;
+                color: $white;
+                transition: color .3s;
+                &:hover {
+                    color: $cream;
+                }
+            }
+        }
+    }
+    .contact-holder {
+        padding-right: 50px;
+        a {
+            display: block;
+        }
+        address {
+            color: $white;
+        }
+    }
+    .copy {
+        display: block;
+        margin-bottom: 28px;
+        color: $white;
+    }
+    .mail-link {
+        white-space: nowrap;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        .social-links {
+            margin-right: 20px;
+        }
+        .svg-logo {
+            img {
+                width: 90px;
+                height: 112px;
+            }
+        } 
+    }
+}
