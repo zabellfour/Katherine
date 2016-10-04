@@ -13,7 +13,7 @@
     <div id="wrapper">
       <div id="header">
       </div>
-      <div class="contact-banner" style="background-image: url('build/images/banner1.jpg')">
+      <div class="banner" style="background-image: url('build/images/banner1.jpg')">
           <div class="container">
             <div class="banner-title">
                 <h1>
@@ -24,10 +24,10 @@
           </div>
         </div>
       <main>
-        <div class="contact-section">
+        <section class="contact-section">
             <div class="container">
-                <div class="contact-block">
-                    <div class="row">
+                <div class="row">
+                    <div class="contact-block">
                         <div class="col-md-6 left-side">
                             <div class="contact-info">
                                 <h5>contacter <br>la matériauthèque <br> de catherine</h5>
@@ -43,12 +43,12 @@
                             <form action="#">
                                 <div class="form-group">
                                     <div class="input-group contact-input-group">
-                                        <input type="text" class="form-control" placeholder="Nom, Prénom :" pattern="#">
-                                        <input type="tel" class="form-control" placeholder="Téléphone :" pattern="#">
-                                        <input type="email" class="form-control" placeholder="Email :" pattern="#">
-                                        <input type="text" class="form-control" placeholder="Adresse :" pattern="#">
-                                        <input type="text" class="form-control" placeholder="Demande :" pattern="#">
-                                        <textarea class="form-control" rows="4" placeholder="Message :" pattern="#"></textarea>
+                                        <input type="text" class="form-control" placeholder="Nom, Prénom :" required>
+                                        <input type="tel" class="form-control" placeholder="Téléphone :" required>
+                                        <input type="email" class="form-control" placeholder="Email :" required>
+                                        <input type="text" class="form-control" placeholder="Adresse :" required>
+                                        <input type="text" class="form-control" placeholder="Demande :" required>
+                                        <textarea class="form-control" rows="4" placeholder="Message :" required></textarea>
                                         <button class="btn btn-gray" type="submit">Envoyer<i class="icon-chevron-thin-right"></i></button>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                     </div>            
                 </div>
             </div>
-        </div>
+        </section>
         <div class="map-box">
             <div class="map">
                 <div class="map-canvas" data-markers="build/inc/markers.json"></div>
@@ -97,7 +97,7 @@
                         <a href="#"><i class="icon-linkedin"></i></a>
                     </div>
                     <a class="svg-logo" href="home.php">
-                        <img src="build/images/logo.svg" alt="ADT Assistance Depannage Toulousain">
+                        <img src="build/images/logo.svg" width="90px" height="112px" alt="">
                     </a>
                 </div>
             </div>

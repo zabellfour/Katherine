@@ -1,6 +1,7 @@
 .contact-section {
-	height: 566px;
-	background: #e8e8e8;
+	padding-bottom: 566px;
+	background-color: #e8e8e8;
+	@extend %clerfix;
 	@include media('<desktop') {
 	        height: auto;
 		}
@@ -12,7 +13,6 @@
 }
 .contact-block {
 	position: absolute;
-	width: 100%;
 	top: -120px;
 	h5 {
 		color: #444a50; 
