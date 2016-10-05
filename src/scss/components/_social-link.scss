@@ -1,13 +1,16 @@
 .social-links {
 	display: flex;
-	width: 102px;
 	justify-content: space-between;
 	align-items: center;
 	a {
 		display: block;
 		height: 50px;
-		width: 50px;
+		width: 52px;
+		border-right: 2px solid $gray;
 		text-align: center;
+		&:last-child {
+			border: none;
+		}
 		&:hover {
 			opacity: .7;
 		}

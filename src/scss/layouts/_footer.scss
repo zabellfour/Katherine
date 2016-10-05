@@ -9,34 +9,10 @@
     }
     a:hover {
         color: $cream;
-
-    }
-    .telephone-inverse {
-        color: #000;
-        font-size: 24px;
-        font-weight: bold;
-        vertical-align: middle;
-        @include media('<widescreen') {
-            font-size: 18px;
-        }
-        i {
-            display: inline-block;
-            margin-right: 8px;
-        }
     }
     .footer-top {
-        display: flex;
-        align-items: center;
-        padding-bottom: 44px;
-        justify-content: space-between;
-        margin-bottom: 70px;
-        @include media('<desktop') {
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
     .footer-nav {
         @extend %listreset;
@@ -46,7 +22,10 @@
         justify-content: space-between;
         @include media('<desktop') {
             margin-bottom: 10px;
-        }
+        }       
+         @include media('<tablet') {
+            flex-wrap: wrap;
+        }       
         li {
             display: block;
             &.active a{
@@ -71,7 +50,7 @@
         }
     }
     .contact-holder {
-        padding-right: 50px;
+    
         a {
             display: block;
         }
@@ -81,7 +60,8 @@
     }
     .copy {
         display: block;
-        margin-bottom: 28px;
+        padding-left: 63px;
+        margin-bottom: 17px;
         color: $white;
     }
     .mail-link {
@@ -93,6 +73,12 @@
         align-items: flex-start;
         .social-links {
             margin-right: 20px;
+        }
+        .svg-logo {
+            transition: opacity .3s;
+            &:hover {
+                opacity: .8
+            }
         }
     }
 }

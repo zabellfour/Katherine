@@ -12,6 +12,10 @@
 @import 'base/typography';
 @import 'base/forms';
 
+/* Layouts */
+@import 'layouts/header';
+@import 'layouts/footer';
+
 /* Components */
 @import 'components/header';
 @import 'components/button';
@@ -19,4 +23,3 @@
 @import 'components/banner';
 @import 'components/google-map';
 @import 'components/cantact-info';
-@import 'components/footer'; 
