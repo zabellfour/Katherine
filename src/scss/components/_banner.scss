@@ -20,6 +20,15 @@
 		@include media('<tablet') {
 			font-size: 40px;
 			letter-spacing: 9px;
+			}		
+		@include media('<phone') {
+			font-size: 32px;
+			letter-spacing: 9px;
+			}
+		}
+		.small-3 {
+			@include media('<tablet') {
+			font-size: 16px;
 			}
 		}
 	}			

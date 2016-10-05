@@ -6,6 +6,7 @@
 	margin-top: -120px;
 	margin-bottom: 115px;
 	display: flex;
+
 	h5 {
 		color: $gray; 
 		margin-bottom: 41px;
@@ -17,6 +18,12 @@
 			font-size: 16px;
 		}
 	}
+	p {
+		text-overflow: ellipsis;
+	}
+	@include media('<tablet') {
+		flex-direction: column;
+		}
 	.left-side {
 		background-color: $white;
 		width: 50%;
@@ -27,6 +34,10 @@
 		}
 		@include media('<tablet') {
 			padding: 47px 27px 47px 30px;
+			width: 100%
+		}		
+		@include media('<phone') {
+			padding: 47px 15px 47px 15px;
 		}
 	}
 	.right-side {
@@ -34,10 +45,14 @@
 		padding: 60px;
 		background-color: $cream;
 		@include media('<=desktop') {
-			padding: 50px;
+			padding: 40px;
 		}
 		@include media('<tablet') {
-			padding: 30px;
+			padding: 25px;
+			width: 100%
+		}
+		@include media('<phone') {
+			padding: 15px;
 		}
 		.btn {
 			position: absolute;
@@ -45,6 +60,15 @@
 			right: 60px;
 			@include media('<tablet') {
 				right: 30px;
+			}
+			@include media('<tablet') {
+				min-width: 100px !important;
+				height: 40px;
+				padding: 5px 11px 5px 15px !important;
+				right: 15px;
+				i {
+					font-size: 17px;
+				}
 			}
 		}
 	}
@@ -62,6 +86,9 @@
 		position: relative;
 		border-top: 1px solid #dadbdc;
 		margin: 67px 0px;
+		@include media('<tablet') {
+			margin: 27px 0px;
+		}
 	}
 	address {
 		line-height: 1.6;
@@ -95,6 +122,7 @@
 		}
 		@include media('<=desktop') {
 			padding: 5px 17px;
+			height: 30px;
 		}
 	}
 	textarea {

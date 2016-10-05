@@ -3,7 +3,7 @@
 @import 'vendors/icons';
 
 /* Base modules*/
-@import 'base/bootstrap-custom';
+@import 'base/bootstrap-custom'; 
 @import 'base/variables';
 @import 'base/functions';
 @import 'base/mixins';
@@ -17,9 +17,10 @@
 @import 'layouts/footer';
 
 /* Components */
-@import 'components/header';
 @import 'components/button';
 @import 'components/social-link';
 @import 'components/banner';
 @import 'components/google-map';
-@import 'components/cantact-info';
+@import 'components/cantact-info';	
+
+
