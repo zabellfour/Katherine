@@ -1,0 +1,33 @@
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    .btn-ico {
+       
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: $white;
+        float: right;
+        transition:opacity 0.3s;
+                
+        &:hover {
+            opacity: .9;
+        }
+        &.gray {
+            background-color: $gray;
+        }
+        &.cream {
+            background-color: $cream;
+        }
+    }
+    .container {
+        @extend %clearfix;
+    }
+}

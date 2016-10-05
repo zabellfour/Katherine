@@ -15,6 +15,11 @@ import HP from './modules/helpers';
     });
 
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel();
+  $('.owl-carousel').owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    dots:false
+  });
 });
 }(jQuery));
