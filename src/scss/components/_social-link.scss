@@ -8,6 +8,7 @@
 		width: 52px;
 		border-right: 2px solid $gray;
 		text-align: center;
+		transition: opacity 0.5s;
 		&:last-child {
 			border: none;
 		}

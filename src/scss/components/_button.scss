@@ -21,8 +21,14 @@
 		opacity: .8;
 		color: $white;
 	}
+	span {
+		display: inline-block;
+		float: left;
+		line-height: $line-height-base;
+	}
 	i {
 		font-size: 25px;
+		float: right;
 		@include media('>=tablet') {
 			margin-left: 30px;
 		}
