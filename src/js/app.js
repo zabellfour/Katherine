@@ -14,12 +14,18 @@ import HP from './modules/helpers';
         });
     });
 
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    items:1,
-    loop:true,
-    autoplay:true,
-    dots:false
-  });
-});
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            dots: false,
+            nav: true
+        });
+    });
+
+    $(function() {
+        $('.arr-align').matchHeight(options);
+    });
+
 }(jQuery));

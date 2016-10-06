@@ -1,3 +1,115 @@
-.owl-carousel{
-	
+.owl-carousel {
+    img {
+        opacity: 0;
+        z-index: -1;
+    }
+    .item {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100%;
+    }
+    .text-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 26px;
+        h1 {
+            min-width: 500px;
+            line-height: 1;
+            font-family: $font-family-sans-serif;
+            @include media('<tablet') {
+                max-width: 480px;
+            }
+            @include media('<phone') {
+                max-width: 300px;
+            }
+        }
+        span {
+            display: block;
+            text-align: center;
+        }
+        .small-1 {
+            margin-bottom: 3px;
+            letter-spacing: 7px;
+            @include media('<phone') {
+                letter-spacing: 2px;
+            }
+        }
+        .large-1 {
+            margin-bottom: 12px;
+            letter-spacing: 18px;
+            @include media('<phone') {
+                letter-spacing: 5px;
+            }
+        }
+        .small-2 {
+            margin-bottom: 100px;
+            letter-spacing: 3px;
+            @include media('<desktop') {
+                margin-bottom: 70px;
+            }
+            @include media('<tablet') {
+                margin-bottom: 50px;
+            }
+            @include media('<phone') {
+                letter-spacing: 0;
+            }
+        }
+        .small-3 {
+            letter-spacing: 5px;
+            @include media('<phone') {
+                letter-spacing: 2px;
+            }
+        }
+    }
+    .owl-nav {
+        max-width: 500px;
+        width: 100%;
+        position: absolute;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include media('<phone') {
+            display: none;
+        }
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            left: -96px;
+            font-size: 0;
+            background-color: transparent !important;
+            @include media('<tablet') {
+                left: -10px;
+            }
+            &:hover:after {
+                color: $cream;
+            }
+            &:after {
+                @include animate(color);
+                font-size: 30px;
+                color: rgba($white, .7);
+                font-family: icomoon;
+                content: "\e905";
+                &:hover {
+                    color: $cream;
+                }
+            }
+        }
+        .owl-next {
+            right: -96px !important;
+            left: auto !important;
+            @include media('<tablet') {
+                right: -10px !important;
+            }
+            &:after {
+                content: "\e904";
+            }
+        }
+    }
 }

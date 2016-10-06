@@ -1,0 +1,71 @@
+.ceo-info {
+    margin-bottom: 105px;
+    @include media('<desktop') {
+        margin-bottom: 80px;
+    }
+    @include media('<tablet') {
+        margin-bottom: 50px;
+    }
+}
+
+.ceo-block {
+    @extend .contact-block;
+    margin-bottom: 0;
+    h5 {
+        letter-spacing: 2.3px;
+        margin-bottom: 38px;
+    }
+    .right-side {
+        background-size: cover;
+        background-position: 50% 50%;
+        img {
+            opacity: 0;
+            height: 0;
+        }
+    }
+    .name {
+        color: $cream;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-left: 16px;
+        font-size: 12px;
+        font-weight: 400;	
+        letter-spacing: 2px; 
+    }
+    .signatore-holder {
+        margin-bottom:15px;
+         @include media('>=desktop') {
+        
+         padding-top: 51px		;
+         }
+        			
+    }
+    .left-side {
+        @extend %clearfix;
+        position: relative;
+        line-height: 1.75;
+        letter-spacing: -0.4px;
+        p {
+            margin-bottom: 24px;
+        }
+        .btn {
+            position: absolute;
+            bottom: -25px;
+            left: 51px;
+            @include media('<tablet') {
+                float: left;
+                position: static;
+            }
+        }
+    }
+    .right-side {
+        @include media('<tablet') {
+            min-height: 800px;
+            max-height: 800px;
+        }
+        @include media('<phone') {
+            max-height: 400px;
+            min-height: 400px;
+        }
+    }
+}

@@ -11,53 +11,45 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header id="header">
+    <div id="wrapper">
+        <div id="header">
+        </div>
+        <div class="banner contact-banner" style="background-image: url('build/images/Atlas-Concorde_Trust_01.jpg')">
             <div class="container">
-                <a href="#" class="btn-ico cream"><i class="icon-phone"></i></a>
-                <a href="#" class="btn-ico gray"><i class="icon-house"></i> </a>
-            </div>
-        </header>
-        <div class="container-fluide">
-            <div class="owl-carousel owl-theme">
-                <div class="item" style="background-image: url(build/images/amenagement-espaces-exterieurs-toulouse.jpg);">
-                    <img src="build/images/amenagement-espaces-exterieurs-toulouse.jpg" alt="amenagement-espaces-exterieurs-toulouse">
-                    <div class="text-block">
-                        <h1>
-                           <span class="small-1">la matériauthèque de</span>
-                           <span class="large-1">  catherine</span>
-                           <span class="small-2">“Une autre idée de vos projets”  </span>
-                           <span class="small-3">Pour votre espace bain</span>
-                        </h1>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(build/images/amenagement-espaces-interieur-toulouse.jpg);">
-                    <img src="build/images/amenagement-espaces-interieur-toulouse.jpg" alt="amenagement-espaces-interieur-toulouse">
-                    <div class="text-block">
-                        <h1>
-                           <span class="small-1">la matériauthèque de</span>
-                           <span class="large-1">catherine</span>
-                           <span class="small-2">“Une autre idée de vos projets”  </span>
-                           <span class="small-3">POUR VOS ESPACES INTERIEURS </span>
-                        </h1>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(build/images/amenagements-espaces-bains-toulouse.jpg);">
-                    <img src="build/images/amenagements-espaces-bains-toulouse.jpg" alt="amenagements-espaces-bains-toulouse">
-                    <div class="text-block">
-                        <h1>
-                           <span class="small-1">la matériauthèque de</span>
-                           <span class="large-1">  catherine</span>
-                           <span class="small-2">“Une autre idée de vos projets”  </span>
-                           <span class="small-3">POUR VOS ESPACES EXTERIEURS </span>
-                        </h1>
-                    </div>
+                <div class="banner-title">
+                    <h1>
+                    <span class="small-3">présentation</span>
+                    <span>qui suis-je ?</span>
+                </h1>
                 </div>
             </div>
         </div>
         <main>
-            <div class="container">
-                <section class="thumb-wrapper">
+            <section class="ceo-info">
+                <div class="container">
+                    <div class="ceo-block">
+                        <div class="left-side">
+                            <div class="contact-info">
+                                <h5>la matériauthèque <br>de catherine</h5>
+                                <p>J 'ai découvert depuis plus de 15 ans une véritable passion pour les matériaux au travers de mon expérience acquise d'abord chez le négoce, puis au cœur de la fabrication chez l'industriel. Cet enthousiasme croissant au fil des années m'a permise d'établir une relation de confiance durable avec les architectes.
+                                </p>
+                                <p>Leurs attentes en terme de réactivité, de technicité, de services m'ont conduites à concevoir un espace dédié pour accompagner sur rendez vous leurs clients.</p>
+                                <p>Mon exigence constante à chercher des solutions individuelles toujours motivées par le meilleur rapport qualité prix, représente pour moi un objectif incontournable. C 'est dans cet état d'esprit que je propose donc mes services uniquement sur rendez vous soit à l'extérieur soit à la matériauthèque.</p>
+                                <div class="signatore-holder">
+                                    <img src="build/images/signature.png" alt="catherine bouquin">
+                                    <strong class="name">catherine bouquin</strong>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-cream">Nous contacter<i class="icon-chevron-thin-right"></i></a>
+                        </div>
+                        <div class="right-side" style="background-image: url(build/images/Photo-catherine.jpg);">
+                            <img src="build/images/Photo-catherine.jpg" alt="Photo-catherine">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="thumb-wrapper static">
+                <div class="container">
                     <div class="row ">
                         <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-sm-offset-0">
                             <a href="#">
@@ -99,8 +91,8 @@
                             </a>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
         <footer id="footer">
             <div class="container">
@@ -144,8 +136,10 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="build/js/vendor.js"></script>
     <script src="build/js/app.js"></script>
+    <script src="build/js/custom-map.js"></script>
 </body>
 
 </html>

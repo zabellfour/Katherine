@@ -18,12 +18,41 @@ h1, .h1 {
   font-weight: 300;
   line-height: $headings-line-height;
   letter-spacing: 25px;
+   @include media('<desktop') {
+      font-size: 65px;  
+      
+   }
+    @include media('<tablet') {
+      font-size: 60px;  
+      letter-spacing: 20px;
+    
+    }
+     @include media('<phone') {
+        font-size:42px;  
+        letter-spacing: 12px;
+     }
+          
+        
+        
   .small-1 {
     font-weight: 300;
     font-size: 32px;
     letter-spacing: 8px;
     color: $white;
     text-transform: uppercase;
+       @include media('<desktop') {
+      font-size: 28px;  
+    letter-spacing: 5px;
+   }
+    @include media('<tablet') {
+      font-size: 20px;  
+      letter-spacing: 1px;
+    
+    }
+     @include media('<phone') {
+        font-size: 18px;  
+      
+     }
   }
   .small-2 {
     font-style: italic;
@@ -31,6 +60,19 @@ h1, .h1 {
     font-size: 30px;
     letter-spacing: 2px;
     color: $cream; 
+           @include media('<desktop') {
+      font-size: 26px;  
+    letter-spacing: 1px;
+   }
+    @include media('<tablet') {
+      font-size: 18px;  
+ 
+    
+    }
+     @include media('<phone') {
+        font-size:16px;  
+      
+     }
   }
   .small-3 {
     font-weight: 300;
@@ -38,6 +80,19 @@ h1, .h1 {
     letter-spacing: 8px;
     color: $white;
     text-transform: uppercase;
+           @include media('<desktop') {
+      font-size: 20px;  
+    letter-spacing: 5px;
+   }
+    @include media('<tablet') {
+      font-size: 16px;  
+      letter-spacing: 1px;
+    
+    }
+     @include media('<phone') {
+        font-size: 14px;  
+      
+     }
   }
 }
 
@@ -54,7 +109,16 @@ h4, .h4 {
 }
 
 h5, .h5 {
-
+     @include media('<desktop') {
+        font-size: 16px;  
+     
+     }
+      @include media('<tablet') {
+        font-size: 16px;  
+      
+      }
+          
+          
 }
 
 h6, .h6 {
