@@ -41,7 +41,7 @@
                     <div class="right-side">
                         <form action="#">
                             <div class="form-group">
-                                <div class="input-group contact-input-group">
+                                <div class="contact-input-group">
                                     <input type="text" class="form-control" placeholder="Nom, Prénom :" required>
                                     <input type="tel" class="form-control" placeholder="Téléphone :">
                                     <input type="email" class="form-control" placeholder="Email :" required>
@@ -50,7 +50,7 @@
                                     <textarea class="form-control" rows="6" placeholder="Message :" required></textarea>
                                 </div>
                             </div>
-                            <button class="btn btn-gray" type="submit">Envoyer<i class="icon-chevron-thin-right"></i></button>
+                            <button class="btn btn-gray" type="submit"><span>Envoyer</span><i class="icon-chevron-thin-right"></i></button>
                         </form>
                     </div>
                 </div>            
@@ -64,6 +64,11 @@
       </main>
     <footer id="footer">
         <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4"></div>
+            </div>
             <div class="footer-top">
                 <ul class="footer-nav">
                     <li class="active"><a href="#">accueil</a></li>
@@ -84,25 +89,25 @@
                 <div class="col-sm-5">
                     <span class="copy">Copyright 2015 - <a href="home.php">la Matériauthèque de Catherine</a><br>  
                     Tous droits réservés <br>
-                    Carrelage - Parquet - Salle de bain <br>
-                    Sols et revêtements design à Toulouse (31) <br>
+                    <a>Carrelage</a> - <a>Parquet</a> - <a>Salle de bain</a> <br>
+                    <a>Sols et revêtements design à Toulouse (31)</a><br>
                     Une création Melting K
                     </span>
                 </div>
                 <div class="col-sm-4 footer-logo">
                     <div class="social-links social-links-dark">
-                        <a href="#"><i class="icon-facebook"></i></a>
-                        <a href="#"><i class="icon-linkedin"></i></a>
+                        <a href="http://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+                        <a href="http://www.linkedin.com" target="_blank"><i class="icon-linkedin"></i></a>
                     </div>
-                    <a class="svg-logo" href="home.php">
-                        <img src="build/images/logo.svg" width="90" height="112" alt="Melting K | Création site internet Toulouse - Logo">
+                    <a class="svg-logo" href="index.php">
+                        <img src="build/images/logo.svg" width="90" height="112" alt="MC LA MATÉRIAUTHÈQUE DE catherine">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
     </div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<!--     // <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> -->
     <script src="build/js/vendor.js"></script>
     <script src="build/js/app.js"></script>
     <script src="build/js/custom-map.js"></script>

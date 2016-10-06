@@ -1,5 +1,13 @@
 .contact-section {
 	background-color: $light-gray;
+	.container {
+		@include media('<tablet') {
+        	padding: 0 60px;
+        }
+         @include media('<phone') {
+        	padding: 0 15px;
+		}
+	}
 }
 .contact-block {
 	position: relative;
@@ -9,16 +17,20 @@
 	h5 {
 		color: $gray; 
 		margin-bottom: 41px;
-		letter-spacing: 4px;
+		letter-spacing: 3px;
 		font-weight: bold;
 		text-transform: uppercase;
 		white-space: normal;
 		@include media('<tablet') {
 			font-size: 16px;
+			margin-bottom: 20px
 		}
 	}
 	p {
 		text-overflow: ellipsis;
+		@include media('<tablet') {
+			margin-bottom: 10px
+		}
 	}
 	@include media('<tablet') {
 		flex-direction: column;
@@ -32,11 +44,11 @@
 			padding: 47px 37px 47px 40px;
 		}
 		@include media('<tablet') {
-			padding: 47px 27px 47px 30px;
+			padding: 37px 27px 37px 30px;
 			width: 100%
 		}		
 		@include media('<phone') {
-			padding: 47px 15px 47px 15px;
+			padding: 27px 15px 27px 15px;
 		}
 	}
 	.right-side {
@@ -58,16 +70,15 @@
 			bottom: -25px;
 			right: 60px;
 			@include media('<tablet') {
-				right: 30px;
-			}
-			@include media('<tablet') {
-				min-width: 100px !important;
 				height: 40px;
 				padding: 5px 11px 5px 15px !important;
-				right: 15px;
+				right: 30px;
 				i {
 					font-size: 17px;
 				}
+			}
+			@include media('<phone') {
+				min-width: 120px !important;
 			}
 		}
 	}
@@ -76,7 +87,7 @@
 		width: 100%;
 		color: #444a50;
 		font-size: 16px;
-		font-weight: 600;
+		font-weight: 900;
 	}
 	.tel-link {
 		margin-bottom: 23px;
@@ -84,15 +95,16 @@
 	hr {
 		position: relative;
 		border-top: 1px solid #dadbdc;
-		margin: 67px 0px;
+		margin: 72px 0px;
 		@include media('<tablet') {
 			margin: 27px 0px;
 		}
 	}
 	address {
+		font-size: 16px;
 		line-height: 1.6;
 		margin-bottom: 10px;
-		font-weight: 600;
+		font-weight: 900;
 	}
 }
 
@@ -104,22 +116,18 @@
 		padding: 10px 18px;
 		font-size: 14px;
 		border: 1px solid #e1d1c2;
-		border-radius: none;
+		border-radius: 0;
 		background-color: $cream;
 		color: $white;
-		resize: none;
+		outline: none;
+		transition: all 0.5s;
 		@include placeholder {
 			color: $white;
-			opacity: 1;
-			transition: opacity .3s ease;
-			&:focus {
-				opacity: 0;
-			}
 		}
 		&:focus {
-			box-shadow: 0px 0px 30px 0px rgba(255,255,255,.2);
+			box-shadow: inset 0 0 0 rgba(255,255,255,.1), 0 0 8px rgba(255,255,255,.5);
 		}
-		@include media('<=desktop') {
+		@include media('<=tablet') {
 			padding: 5px 17px;
 			height: 30px;
 		}
@@ -128,8 +136,6 @@
 		margin-bottom: 0 !important;
 		height: auto !important;
 		line-height: 1.5;
-		&:focus {
-			box-shadow: 0px 0px 30px 0px rgba(255,255,255,.2);
-		}
+		resize: none;
 	}
 }

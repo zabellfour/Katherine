@@ -7,6 +7,14 @@
         padding-bottom: 20px;
         font-size: 12px;
     }
+    .container {
+        @include media('<tablet') {
+            padding: 0 35px;
+        }
+        @include media('<phone') {
+        padding: 0 15px;
+        }   
+    }
     a:hover {
         color: $cream;
     }
@@ -67,6 +75,9 @@
         padding-left: 63px;
         margin-bottom: 17px;
         color: $white;
+            @include media('<tablet') {
+            padding: 0;
+        }
     }
     .mail-link {
         white-space: nowrap;
@@ -83,6 +94,9 @@
             &:hover {
                 opacity: .8
             }
+        }
+            @include media('<tablet') {
+            justify-content: flex-start;
         }
     }
 }
