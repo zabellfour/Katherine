@@ -1,0 +1,45 @@
+
+.launch-video-field {
+	min-height: 209px;
+	margin-bottom: 12px;
+	background-size: cover;
+	background-position: 50% 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	transition: opacity .3s;
+	&:hover {
+		opacity: .7
+	}
+}
+
+.triangle-field {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background: $gray;
+	border: none;
+	opacity: 0.95;
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 0 9px 15px;
+	border-color: transparent transparent transparent $white;
+}
+.modal-content {
+	width: 800px;
+    @include media('<=tablet') {
+		width: 500px;
+    }
+    img {
+    	width: 100%;
+    	height: auto;
+    }
+}

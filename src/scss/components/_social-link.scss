@@ -1,6 +1,5 @@
 .social-links {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	a {
 		display: block;
@@ -9,6 +8,7 @@
 		border-right: 2px solid $gray;
 		text-align: center;
 		transition: opacity 0.5s;
+		background-color: $cream; 
 		&:last-child {
 			border: none;
 		}
