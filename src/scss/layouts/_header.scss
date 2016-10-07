@@ -5,7 +5,7 @@
     right: 0;
     z-index: 100;
     .btn-ico {
-       
+        @include animate(color background-color);
         width: 50px;
         height: 50px;
         opacity: 1;
@@ -15,16 +15,20 @@
         font-size: 20px;
         color: $white;
         float: right;
-        transition:opacity 0.3s;
-                
         &:hover {
-            opacity: .9;
+            color: darken($white, 20%);
         }
         &.gray {
             background-color: $gray;
+            &:hover {
+                background-color: darken($gray, 10%);
+            }
         }
         &.cream {
             background-color: $cream;
+            &:hover {
+                background-color: darken($cream, 10%);
+            }
         }
     }
     .container {

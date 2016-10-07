@@ -14,6 +14,9 @@
     h5 {
         letter-spacing: 2.3px;
         margin-bottom: 38px;
+        @include media('<desktop') {
+            margin-bottom: 15px;
+        }
     }
     .right-side {
         background-size: cover;
@@ -29,24 +32,37 @@
         display: inline-block;
         margin-left: 16px;
         font-size: 12px;
-        font-weight: 400;	
-        letter-spacing: 2px; 
+        font-weight: 400;
+        letter-spacing: 2px;
     }
     .signatore-holder {
-        margin-bottom:15px;
-         @include media('>=desktop') {
-        
-         padding-top: 51px		;
+        margin-bottom: 15px;
+        @include media('>=desktop') {
+            padding-top: 51px;
+        }
+         @include media('<desktop') {
+        	 margin-bottom: 5px;
+         
          }
-        			
+        		
     }
     .left-side {
         @extend %clearfix;
         position: relative;
         line-height: 1.75;
         letter-spacing: -0.4px;
+         @include media('<desktop') {
+        	font-size: 12px;
+         
+         }
+        		
         p {
             margin-bottom: 24px;
+             @include media('<desktop') {
+margin-bottom: 15px;
+             
+             }
+            		
         }
         .btn {
             position: absolute;
