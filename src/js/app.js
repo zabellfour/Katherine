@@ -25,7 +25,7 @@ import HP from './modules/helpers';
     });
 
     $(function() {
-        $('.arr-align').matchHeight(options);
+        $('.arr-align').matchHeight({});
     });
 
 }(jQuery));
