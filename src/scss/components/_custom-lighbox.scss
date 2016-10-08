@@ -34,9 +34,13 @@
 	border-color: transparent transparent transparent $white;
 }
 .modal-content {
+	margin: auto;
 	width: 800px;
+	 @include media('<=desktop') {
+		width: 600px;
+    }
     @include media('<=tablet') {
-		width: 500px;
+		width: 400px;
     }
     img {
     	width: 100%;

@@ -1,13 +1,13 @@
 
 .banner {
-	min-height: 500px;
+	height: 500px;
 	padding: 15px 0 120px 0;
 	background-size: cover;
 	background-position: 50% 50%;
 	display: flex;
 	align-items: center;
 	@include media('<desktop') {
-		min-height: 300px;
+		height: 300px;
 	}
 	&.contact-banner{
 		h1 {
