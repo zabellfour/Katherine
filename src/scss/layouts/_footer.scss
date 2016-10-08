@@ -21,10 +21,14 @@
     .footer-bottom {
         padding-bottom: 40px;
         margin-bottom: 40px;
+        @include media('<desktop') {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
         @include media('<tablet') {
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            }
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        }
     }
     .footer-nav {
         @extend %listreset;
@@ -37,6 +41,7 @@
         }       
          @include media('<tablet') {
             flex-wrap: wrap;
+            text-align: center;
         }       
         li {
             display: block;
@@ -69,6 +74,9 @@
         address {
             color: $white;
         }
+        @include media('<tablet') {
+            text-align: center;;
+        }
     }
     .copy {
         display: block;
@@ -77,6 +85,7 @@
         color: $white;
             @include media('<tablet') {
             padding: 0;
+            text-align: center;
         }
     }
     .mail-link {
@@ -96,7 +105,7 @@
             }
         }
             @include media('<tablet') {
-            justify-content: flex-start;
+            justify-content: space-around;
         }
     }
     .footer-top {
@@ -132,8 +141,14 @@
         position: relative;
         border-top: 1px solid #696e73;
         margin: 35px 0 60px 0;
+        @include media('<desktop') {
+            margin: 35px 0px;
+        } 
         @include media('<tablet') {
-            margin: 30px 0px;
+            margin: 25px 0px;
+        }
+        @include media('<phone') {
+            margin: 15px 0px;
         }
     }
     .video-link {

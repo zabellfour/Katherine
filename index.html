@@ -10,34 +10,172 @@
     <link media="all" rel="stylesheet" href="build/css/style.css">
 </head>
 
-<body style="background-color: rgba(0,0,0,.2)" ; <div id="wrapper">
-    <div style=" display: flex;justify-content: center;
-     align-items:center; flex-direction: column; height:100vh">
-        <h1 style="font-size: 20px; color: red; margin-bottom: 20px;  ">pages-list:</h1>
-        <ul style="font-size: 20px; color: red;">
-            <li>
-                <a href="home.html">home</a>
-            </li>
-            <li>
-                <a href="contacter-materiautheque-catherine-toulouse.html">contacter-materiautheque-catherine-toulouse</a>
-            </li>
-            <li>
-                <a href="presentation-materiautheque-catherine.html">presentation-materiautheque-catherine.html</a>
-            </li>
-            <li>
-                <a href="prestations-amenagement-revetements-pour-architectes.html">prestations-amenagement-revetements-pour-architectes.html</a>
-            </li>
-            <li>
-                <a href="prestations-amenagement-revetements-pour-professionnels.html">prestations-amenagement-revetements-pour-professionnels.html</a>
-            </li>
-          
-               <li>
-                <a href="prestations-amenagement-revetements-pour-particuliers.html">  prestations-amenagement-revetements-pour-particuliers.html</a>
-            </li>
-            <li>
-                <a href="typography.html">Typography</a>
-            </li>
-        </ul>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="container">
+                <a href="contacter-materiautheque-catherine-toulouse.php" class="btn-ico cream"><i class="icon-phone"></i></a>
+                <a href="index.php" class="btn-ico gray"><i class="icon-house"></i> </a>
+            </div>
+        </header>
+        <div class="container-fluide">
+            <div class="owl-carousel owl-theme">
+                <div class="item" style="background-image: url(build/images/amenagement-espaces-exterieurs-toulouse.jpg);">
+                    <img src="build/images/amenagement-espaces-exterieurs-toulouse.jpg" alt="amenagement-espaces-exterieurs-toulouse">
+                    <div class="text-block">
+                        <h1>
+                           <span class="small-1">la matériauthèque de</span>
+                           <span class="large-1">  catherine</span>
+                           <span class="small-2">“Une autre idée de vos projets”  </span>
+                           <span class="small-3">Pour votre espace bain</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(build/images/amenagement-espaces-interieur-toulouse.jpg);">
+                    <img src="build/images/amenagement-espaces-interieur-toulouse.jpg" alt="amenagement-espaces-interieur-toulouse">
+                    <div class="text-block">
+                        <h1>
+                           <span class="small-1">la matériauthèque de</span>
+                           <span class="large-1">catherine</span>
+                           <span class="small-2">“Une autre idée de vos projets”  </span>
+                           <span class="small-3">POUR VOS ESPACES INTERIEURS </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(build/images/amenagements-espaces-bains-toulouse.jpg);">
+                    <img src="build/images/amenagements-espaces-bains-toulouse.jpg" alt="amenagements-espaces-bains-toulouse">
+                    <div class="text-block">
+                        <h1>
+                           <span class="small-1">la matériauthèque de</span>
+                           <span class="large-1">  catherine</span>
+                           <span class="small-2">“Une autre idée de vos projets”  </span>
+                           <span class="small-3">POUR VOS ESPACES EXTERIEURS </span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="container">
+                <section class="thumb-wrapper">
+                    <div class="row ">
+                        <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-xs-offset-1 col-sm-offset-0">
+                            <a href="prestations-amenagement-revetements-pour-architectes.html">
+                                <div class="thumb-holder">
+                                    <div class="top-holder">
+                                        <h5><span class="light">vous êtes </span>architecte ?</h5>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="build/images/solutions-pour-architectes-toulouse.jpg" alt="solutions-pour-architectes-toulouse">
+                                    </div>
+                                    <div class="btn btn-arrow"> <i class="icon-chevron-thin-right"> </i> </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                            <a href="prestations-amenagement-revetements-pour-particuliers.html">
+                                <div class="thumb-holder">
+                                    <div class="top-holder">
+                                        <h5><span class="light">vous êtes </span> particulier ?</h5>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="build/images/nos-activites-pour-particuliers-toulouse.jpg" alt="nos-activites-pour-particuliers-toulouse">
+                                    </div>
+                                    <div class="btn btn-arrow"> <i class="icon-chevron-thin-right"> </i> </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                            <a href="prestations-amenagement-revetements-pour-professionnels.html">
+                                <div class="thumb-holder">
+                                    <div class="top-holder">
+                                        <h5><span class="light">vous êtes </span> professionnel ?</h5>
+                                    </div>
+                                    <div class="img-holder">
+                                        <img src="build/images/nos-activites-pour-professionnels-toulouse.jpg" alt="nos-activites-pour-professionnels-toulouse">
+                                    </div>
+                                    <div class="btn btn-arrow"> <i class="icon-chevron-thin-right"> </i> </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h5>actus</h5>
+                        <p class="news-content">Bonjour et bienvenue sur notre nouveau site internet ! Toute l’équipe de la Matériauthèque de Catherine vous souhaite une agréable visite.</p>
+                        <p class="news-content">Dans cette zone vous pourrez mettre<br> facilement à jour les actualités via une <br> interface de gestion dédiée.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5>suivez-nous</h5>
+                        <p>Restez informés de toutes nos dernières actualités via les réseaux sociaux :</p>
+                        <div class="social-links">
+                            <a href="http://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+                            <a href="http://www.linkedin.com" target="_blank"><i class="icon-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 video-block">
+                        <div class="launch-video-field" style="background-image: url('build/images/img5.jpg')" height="209px" data-toggle="modal" data-target=".bs-example-modal-lg">
+                            <div class="triangle-field">
+                            <span class="triangle"></span>
+                            </div>
+                        </div>     
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                          <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"> 
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                </div>
+                                <img src="build/images/img5.jpg" alt="video">
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="video-link">vidéo</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <ul class="footer-nav">
+                    <li class="active"><a href="#">accueil</a></li>
+                    <li><a href="#">qui suis-je ?</a></li>
+                    <li><a href="#">architecte</a></li>
+                    <li><a href="#">particulier</a></li>
+                    <li><a href="#">professionnel</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 contact-holder">
+                    <a href="tel:0561802220" class="tel-link">Tél. 05 61 80 22 20</a>
+                    <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#108;&#097;&#109;&#097;&#116;&#101;&#114;&#105;&#097;&#117;&#116;&#104;&#101;&#113;&#117;&#101;&#046;&#102;&#114;" class="mail-link">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#108;&#097;&#109;&#097;&#116;&#101;&#114;&#105;&#097;&#117;&#116;&#104;&#101;&#113;&#117;&#101;&#046;&#102;&#114;</a>
+                    <address>5 rue du développement - <br> ZI de VIC <br> 31320 Castanet-Tolosan</address>
+                </div>
+                <div class="col-sm-5">
+                    <span class="copy">Copyright 2015 - <a href="home.php">la Matériauthèque de Catherine</a><br>  
+                    Tous droits réservés <br>
+                    <a>Carrelage</a> - <a>Parquet</a> - <a>Salle de bain</a> <br>
+                    <a>Sols et revêtements design à Toulouse (31)</a><br>
+                    Une création Melting K
+                    </span>
+                </div>
+                <div class="col-sm-4 footer-logo">
+                    <div class="social-links social-links-dark">
+                        <a href="http://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a>
+                        <a href="http://www.linkedin.com" target="_blank"><i class="icon-linkedin"></i></a>
+                    </div>
+                    <a class="svg-logo" href="index.php">
+                        <img src="build/images/logo.svg" width="90" height="112" alt="MC LA MATÉRIAUTHÈQUE DE catherine">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
     <script src="build/js/vendor.js"></script>
     <script src="build/js/app.js"></script>
